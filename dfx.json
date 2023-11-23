@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "fuzzyoctodoodle_backend": {
+      "main": "src/fuzzyoctodoodle_backend/main.mo",
+      "type": "motoko"
+    },
+    "fuzzyoctodoodle_frontend": {
+      "dependencies": [
+        "fuzzyoctodoodle_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/fuzzyoctodoodle_frontend/src/index.html"
+      },
+      "source": [
+        "src/fuzzyoctodoodle_frontend/assets",
+        "dist/fuzzyoctodoodle_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
