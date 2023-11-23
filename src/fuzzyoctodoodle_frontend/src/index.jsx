@@ -1,6 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
+import { fuzzyoctodoodle_backend } from "../../declarations/fuzzyoctodoodle_backend";
 
 
 const container = document.getElementById("app");
